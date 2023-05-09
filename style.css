@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dark-mode {
+  background-color: #000;
+}
+.dark-mode .frame {
+  background-color: #243748;
+}
+.dark-mode .visor {
+  background-color: rgba(255, 255, 255, 0.082);
+}
+.dark-mode .visor .previous-operand {
+  color: #cbd2d8ce;
+}
+.dark-mode .visor .current-operand {
+  color: #cbd2d8;
+}
+.dark-mode .teclado {
+  background-color: rgba(255, 255, 255, 0.082);
+}
+.dark-mode button {
+  background-color: #243748;
+  color: #cbd2d8;
+}
+.dark-mode button:hover {
+  background-color: #0e1318;
+  color: #cbd2d8;
+}
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  min-width: 25vw;
+}
+.frame {
+  display: flex;
+  flex-direction: column;
+  min-height: 48vh;
+  margin: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #cbd2d8;
+}
+.visor {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 7.4vh;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #d8e1e9;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.visor .previous-operand {
+  color: #243748d2;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.visor .current-operand {
+  color: #243748;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 33vh;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #d8e1e9;
+  justify-content: space-evenly;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+  min-width: 4vw;
+  margin: 0.22rem;
+  padding: 1rem;
+  background-color: #cbd2d8;
+  border: none;
+  border-radius: 0.5rem;
+  color: #243748;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+.botao-two {
+  grid-column: span 2;
+}
+button:hover {
+  background-color: #8e9497;
+  color: #243748;
+}
